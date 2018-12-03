@@ -1,0 +1,44 @@
+\chapter{Motivação}
+\label{sec:motivacao}
+% (ENTRE 1 e 2 PÁGINAS)
+
+A Computação em Nuvem\cite{NIST:2011} se tornou o paradigma mais adotado no que diz respeito a entrega de serviços pela internet. Isso foi possível devido a grande quantidade de recursos disponíveis. Junto das novas possibilidades de serviços e aplicações hospedados na nuvem, vieram também novos desafios\cite{Armbrust09abovethe}. Dentre os principais, os que são voltados a este trabalho são:
+
+\begin{enumerate}
+    \item Elásticidade de Recursos: Recursos computacionais necessitam estar disponíveis para as aplicações de acordo com uso das mesmas. Se uma aplicação consome, na maior parte do tempo, menos recursos do que necessário, causará prejuízo ao usuário e ao meio ambiente. Se uma aplicação possui constantes picos de acesso e não tem a demanda necessária para atende-los, possívelmente irá perder clientes. 
+    Uma das maneiras de lidar com esse problema é usar o modelo pay-as-you-go, que permite se escalar rapidamente para mais ou para menos os recursos utilizados por uma aplicação. 
+    
+    \item Imprevisibilidade de Desempenho: Máquinas Virtuais podem dividir CPU e memória de um mesmo computador sem ter grande perda de desempenho, porém, o mesmo não pode ser dito em relação a \textit{I/O}. Outro problema, voltado para computações que necessitam de alto desempenho, é a imprevisibilidade no escalonamento de máquinas virtuais para algumas classes de processamento em lote. O obstáculo para atrair computações de alto desempenho não é o uso de clusters, mas o fato de que algumas aplicações necessitam que todas as \textit{threads} estejam rodando simultâneamente, assim, uma possibilidade de sobrepor este desafio é o uso de \textit{gang scheduling} em nuvem.
+    
+    \item Disponibilidade de Serviços: Se um usuário quer checar o acesso a internet e possui apenas o navegador do Google, o mesmo pode não estar disponível no momento e o usuário pode pensar que esta sem acesso a internet. Esse tipo de problema ocorre também em outras aplicações que possuem apenas um provedor. Além disso, essa abordagem facilita ataques, como o \textit{Distributed Denial of Service} (DDOS).
+    
+    %mais algum?
+    
+    %\item Gargalo de Banda: Aplicações estão cada vez produzindo mais dados e a tendência é que cresça ainda mais, isso devido ao advento do Paradigma da Internet das Coisas\cite{atzori2010internet}. Com esse crescimento 
+    
+    %\item \textbf{Escalonamento de Recursos e Balanceamento de Máquinas Virtuais:}
+\end{enumerate}
+
+
+Os desafios listados possuem dois fatores em comum: escalonamento de \textit{VMs} e balanceamento de carga. A otimização de uso dos recursos dos servidores esta relacionada diretamente ao consumo energético. Em  \cite{dayarathna2016data} foi feito um \textit{survey} sobre o consumo energético de Data Centers e destaca a grande energia consumida pelos mesmos. Desse modo, avaliar consumo energético de Data Centers pode ajudar o escalonamento de \textit{VMs} e balanceamento de carga.
+ 
+%falar das pertinências
+Aliado a esta ideia, tem-se uma abordagem utilizando as propriedades da Lógica Fuzzy\cite{zadeh1988fuzzy}. %A Lógica Fuzzy, 
+Diferente da Lógica Clássica, que possui apenas resultados binários como "0" ou "1", ou então apenas "sim" ou "não", os valores obtidos pela Lógica Fuzzy são dados em forma de pertinência, permitindo uma flexibilização das possibilidades, ou seja, é possível obter um valor intermediário entre os extremos, como por exemplos "0, 0.5, 1" ou "não, talvez, sim".
+
+
+
+\cite{wang2014towards} emprega Lógica Fuzzy para validar o uso de servidores de nuvem de acordo com o \textit{feedback} dos usuários.
+
+\cite{mahmud2018quality} propõe uma política de posicionamento de aplicativos, classificando-os com uso de uma abordagem da Lógica Fuzzy, com base em \textit{Quality of Experience}, que prioriza diferentes aplicações conforme as expectativas de uso dos usuários enquanto calcula a capacidade da nevoa em suportar essas aplicações.
+
+%\cite{chamas2017two} escrever.
+\cite{Shojafar2015} apresenta uma abordagem híbrida combinando Lógica Fuzzy e algorítmos genéticos para otimizar o balanceamento de carga e escalonamento de \textit{VMs} considerando o tempo e custo de execução.
+
+Assim, é notável que a Lógica Fuzzy pode contribuir com a Computação em Nuvem. Desse modo, classificar o consumo energético de um servidor como "baixo, médio ou alto" poderá ser de grande utilidade para o uso de políticas de escalonamento, migração e balanceamento de carga afim de reduzirem o seu consumo.
+
+
+%falar em como scheduling e load balance impactam no consumo energético //// como classificar o uso pode melhorar os trabalhos anteriores e etc
+
+  % FALAR DE LOGICA FUZZY
+%falar como usar FL pode ajudar escalonamento e load balance

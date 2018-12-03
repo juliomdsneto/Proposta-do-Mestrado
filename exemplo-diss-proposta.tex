@@ -1,0 +1,96 @@
+\documentclass[diss-proposta,nocipinfo]{texufpel}
+%nocipinfo para não aparecer os dados da CIP no Resumo
+
+\usepackage[utf8]{inputenc} % acentuacao
+\usepackage{graphicx} % para inserir figuras
+\usepackage[T1]{fontenc}
+\usepackage{subfiles}
+
+\hypersetup{
+    hidelinks, % Remove coloração e caixas
+    unicode=true,   %Permite acentuação no bookmark
+    linktoc=all %Habilita link no nome e página do sumário
+}
+
+\unidade{Centro de Desenvolvimento Tecnológico}
+\programa{Programa de Pós-Graduação em Computação}
+\curso{Ciência da Computação}
+
+\title{Um Blabla Blablabla com Aplicações em Blablabla}
+
+\author{Julio}{Silveira Neto}
+\advisor[Prof.~Dr.]{Pilla}{Maurício Lima}
+%\coadvisor[Prof.~Dr.]{Aguiar}{Marilton Sanchotene de}
+%\collaborator[Prof.~Dr.]{Aguiar}{Marilton Sanchotene de}
+
+%Palavras-chave em PT_BR
+\keyword{Computação em Nuvem}
+%\keyword{Computação em Nevoa}
+\keyword{Escalonamento de Recursos}
+\keyword{Balanceamento de Carga}
+\keyword{Lógica Fuzzy}
+
+%Palavras-chave em EN_US
+\keywordeng{Cloud Computing}
+%\keywordeng{Fog Computing}
+\keywordeng{Scheduling Resources}
+\keywordeng{Load Balance}
+\keywordeng{Fuzzy Logics}
+
+
+
+\begin{document}
+
+%\renewcommand{\advisorname}{Orientadora}           %descomente caso tenhas orientadora
+%\renewcommand{\coadvisorname}{Coorientadora}      %descomente caso tenhas coorientadora
+
+\maketitle 
+%\sloppy
+
+%Resumo em Portugues (no maximo 1 pagina)
+\begin{abstract}
+  Apresentar aqui uma breve Introdução ao Problema que está se
+  pretendendo resolver ou abordar. Além disso, nesta seção,
+  apresenta(m)-se o(s) principal(is) objetivo(s) do projeto e,
+  portanto, a(s) principal(is) contribuição(ções).
+\end{abstract}
+
+
+\input{Motivacao.tex}
+\input{Objetivos.tex}
+\input{Metodologia.tex}
+\input{Cronograma.tex}
+% (ENTRE 1 e 3 PÁGINAS)
+
+
+%O objetivo geral deste trabalho é desenvolver um modelo de arquitetura para sistemas que utilizem TUIs através do uso de hardware específico. Como objetivos específicos
+
+
+
+\bibliography{bibliografia}
+\bibliographystyle{abnt}
+
+\chapter{Assinaturas}
+\vspace{2cm}
+
+\begin{center}
+\rule{8cm}{.3mm}
+\medskip
+
+	Julio Machado da Silveira Neto\\
+	Proponente
+
+\end{center}
+
+\vspace{4cm}
+
+\begin{center}
+\rule{8cm}{.3mm}
+\medskip
+
+	Mauricio Lima Pilla\\
+	Prof. Orientador
+
+\end{center}
+\end{document}
+
